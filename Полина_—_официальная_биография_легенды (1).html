@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Полина — официальная биография легенды</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Golos+Text:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EFE9FF;--ink:#241B3A;--muted:#5A4F77;--card:#FFFFFF;
+  --pink:#E6286E;--mint:#7DE0C3;--sun:#FFD84D;--line:#241B3A;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#17112B;--ink:#F2EDFF;--muted:#B7ABD6;--card:#241B3F;
+    --pink:#FF6AA2;--mint:#5CD6B5;--sun:#FFD84D;--line:#F2EDFF;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#17112B;--ink:#F2EDFF;--muted:#B7ABD6;--card:#241B3F;
+  --pink:#FF6AA2;--mint:#5CD6B5;--sun:#FFD84D;--line:#F2EDFF;
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:1.05rem;line-height:1.6;
+}
+main{max-width:46rem;margin:0 auto;padding:1.25rem 1.1rem 4rem}
+h1,h2{font-family:Unbounded,"Arial Black",Impact,sans-serif;line-height:1.05;margin:0}
+
+/* hero */
+.hero{position:relative;padding:2.5rem 0 2rem}
+h1{font-size:clamp(2.8rem,15vw,7.5rem);font-weight:800;letter-spacing:-.02em;word-break:break-word}
+.lead{max-width:34rem;margin:1.2rem 0 0;font-size:1.15rem}
+.stamp{
+  position:absolute;right:0;top:.2rem;transform:rotate(9deg);
+  border:3px solid var(--pink);color:var(--pink);border-radius:.6rem;
+  padding:.35rem .7rem;font-family:Unbounded,sans-serif;font-weight:800;
+  font-size:.68rem;line-height:1.25;text-align:center;background:var(--bg);
+}
+
+/* sections */
+section{margin-top:2.75rem}
+h2{font-size:clamp(1.4rem,6vw,2rem);margin-bottom:1.1rem}
+.card{
+  background:var(--card);border:2px solid var(--line);border-radius:1.1rem;
+  padding:1.1rem 1.2rem;box-shadow:6px 6px 0 var(--pink);
+}
+dl{margin:0;display:grid;gap:.9rem}
+dt{font-weight:700;font-size:.9rem;color:var(--muted)}
+dd{margin:.1rem 0 0}
+
+/* timeline */
+ol{list-style:none;margin:0;padding:0 0 0 1.4rem;border-left:3px solid var(--line)}
+ol li{position:relative;padding:0 0 1.4rem 1rem}
+ol li::before{
+  content:"";position:absolute;left:-2.05rem;top:.35rem;width:.9rem;height:.9rem;
+  border-radius:50%;background:var(--sun);border:3px solid var(--line);
+}
+ol b{font-family:Unbounded,sans-serif;font-weight:500;font-size:.95rem;display:block;margin-bottom:.15rem}
+
+/* feats */
+.feats{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
+.feat{
+  background:var(--card);border:2px solid var(--line);border-radius:1rem;
+  padding:.9rem 1rem;display:flex;gap:.7rem;align-items:flex-start;
+}
+.feat:nth-child(2n){border-radius:1.6rem .6rem 1.6rem .6rem}
+.feat span{font-size:1.6rem;line-height:1}
+
+/* generator */
+.gen{background:var(--mint);color:#241B3A;border:2px solid var(--line);border-radius:1.1rem;padding:1.2rem}
+.gen p{margin:0 0 1rem;font-family:Unbounded,sans-serif;font-weight:500;font-size:1.05rem;line-height:1.35;min-height:4.2em}
+button{
+  font:inherit;font-weight:700;cursor:pointer;color:#fff;background:#241B3A;
+  border:0;border-radius:2rem;padding:.7rem 1.3rem;
+}
+button:hover{background:var(--pink)}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+
+/* quotes */
+blockquote{margin:0 0 1.2rem;padding:0 0 0 1rem;border-left:5px solid var(--pink);font-size:1.15rem}
+blockquote cite{display:block;font-size:.9rem;color:var(--muted);font-style:normal;margin-top:.2rem}
+
+footer{margin-top:3.5rem;padding-top:1.2rem;border-top:2px dashed var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="stamp">Подтверждено<br>никем</div>
+    <h1>Полина</h1>
+    <p class="lead">Легенда, мастер фразы «я уже выхожу» и обладательница нерушимого рекорда по количеству чая за один вечер.</p>
+  </header>
+
+  <section aria-labelledby="dos">
+    <h2 id="dos">Досье</h2>
+    <div class="card">
+      <dl>
+        <div><dt>Полное имя</dt><dd>Полина Великолепная, она же Полли, она же «та самая»</dd></div>
+        <div><dt>Родилась</dt><dd>В день, когда у вселенной было хорошее настроение</dd></div>
+        <div><dt>Знак зодиака</dt><dd>Чайный пакетик (стихия: кипяток)</dd></div>
+        <div><dt>Рост</dt><dd>Ровно такой, чтобы достать до верхней полки и сделать вид, что так и задумано</dd></div>
+        <div><dt>Суперсила</dt><dd>Выглядеть так, будто всё под контролем</dd></div>
+        <div><dt>Слабость</dt><dd>Фраза «давай ещё одну серию»</dd></div>
+        <div><dt>Любимое слово</dt><dd>«Щас»</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section aria-labelledby="way">
+    <h2 id="way">Путь героя</h2>
+    <ol>
+      <li><b>Детство</b>Научилась ходить, чтобы быстрее добираться до холодильника. Холодильник был впечатлён.</li>
+      <li><b>Эпоха будильников</b>Победила будильник в четырнадцати раундах. В пятнадцатом он проиграл по очкам.</li>
+      <li><b>Чайный прорыв</b>Заварила чай и не забыла о нём. Учёные до сих пор изучают этот случай.</li>
+      <li><b>Великое опоздание</b>Впервые сказала «буду через пять минут» и пришла через пять минут. Свидетели не поверили собственным глазам.</li>
+      <li><b>Сегодня</b>Продолжает покорять мир. Но сначала чай.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="ach">
+    <h2 id="ach">Достижения</h2>
+    <div class="feats">
+      <div class="feat"><span>🏆</span><div>Чемпионка мира по поиску наушников в собственном кармане</div></div>
+      <div class="feat"><span>☕</span><div>Чайный сомелье. Различает «горячий» и «уже остыл, но я допью»</div></div>
+      <div class="feat"><span>🛍️</span><div>Ходила за хлебом, вернулась с тремя пакетами. Хлеба не было</div></div>
+      <div class="feat"><span>📸</span><div>Сделала одно фото «на секунду». Секунда длилась сорок минут</div></div>
+      <div class="feat"><span>🐱</span><div>Любое животное во дворе считает своим другом. Взаимно</div></div>
+      <div class="feat"><span>🎬</span><div>Знает, чем закончится фильм, по второй минуте. Всё равно плачет</div></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="gen">
+    <h2 id="gen">Генератор подвигов</h2>
+    <div class="gen">
+      <p id="feat" aria-live="polite">Нажми на кнопку, и узнаешь, чем сегодня прославилась Полина.</p>
+      <button type="button" id="go">Ещё один подвиг</button>
+    </div>
+  </section>
+
+  <section aria-labelledby="q">
+    <h2 id="q">Цитаты великой</h2>
+    <blockquote>«Это не опоздание, это красивый выход.»<cite>Полина, стоя в дверях</cite></blockquote>
+    <blockquote>«Одна серия — это ровно шесть.»<cite>Полина, математик по призванию</cite></blockquote>
+    <blockquote>«Я не голодная, я просто попробую.»<cite>Полина, доедая вашу порцию</cite></blockquote>
+  </section>
+
+  <section aria-labelledby="rev">
+    <h2 id="rev">Отзывы</h2>
+    <blockquote>«Знаю её давно, до сих пор не понял, как это работает. Десять из десяти.»<cite>Анонимный друг</cite></blockquote>
+    <blockquote>«Меня вскипятили, потом забыли. Не в обиде, она классная.»<cite>Чайник</cite></blockquote>
+    <blockquote>«Сертифицированная легенда. Печать приложена, но потерялась.»<cite>Совет мудрецов, которого не существует</cite></blockquote>
+  </section>
+
+  <footer>Всё на этой странице выдумано. Любые совпадения с реальностью — это Полина в очередной раз превзошла ожидания.</footer>
+</main>
+<script>
+(function(){
+  var feats=[
+    "Сегодня выпила чай, пока он был горячим. Весь город аплодировал стоя.",
+    "Нашла наушники с первой попытки. Эксперты называют это чудом.",
+    "Сказала «я быстро» и действительно была быстрой. Календарь в шоке.",
+    "Открыла холодильник просто посмотреть. Вышла с ужином на троих.",
+    "Выиграла спор с навигатором. Навигатор до сих пор пересчитывает маршрут.",
+    "Написала «уже еду» ещё до того, как встала с дивана. Это называется стратегия.",
+    "Прошла мимо кофейни и не зашла. Кофейня объявила траур.",
+    "Убедила будильник взять выходной. Он согласился с первого раза.",
+    "Поставила телефон на зарядку в тот же день, когда он сел. Новый мировой рекорд.",
+    "Одним взглядом заставила пиццу остыть и подогреться обратно."
+  ];
+  var el=document.getElementById("feat"),last=-1;
+  document.getElementById("go").addEventListener("click",function(){
+    var i;do{i=Math.floor(Math.random()*feats.length)}while(i===last);
+    last=i;el.textContent=feats[i];
+  });
+})();
+</script>
+</body>
+</html>
